@@ -48,11 +48,20 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(${includes})
+include_directories(Core/Inc
+        Drivers/STM32F1xx_HAL_Driver/Inc
+        Drivers/STM32F1xx_HAL_Driver/Inc/Legacy
+        Drivers/CMSIS/Device/ST/STM32F1xx/Include
+        Drivers/CMSIS/Include
+        Middlewares/Third_Party/FreeRTOS/Source/include
+        Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS
+        Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3
+        code_mf/Inc
+        code_mf/Src)
 
 add_definitions(${defines})
 
-file(GLOB_RECURSE SOURCES ${sources})
+file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "code_mf/*.*")
 
 set(LINKER_SCRIPT $${CMAKE_SOURCE_DIR}/${linkerScript})
 

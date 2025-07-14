@@ -5,13 +5,13 @@
 # compile C with C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
 ASM_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 
-ASM_INCLUDES = -ID:\RoboMaster_git\power_meter\Core\Inc -ID:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\RoboMaster_git\power_meter\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\RoboMaster_git\power_meter\Drivers\CMSIS\Include
+ASM_INCLUDES = -ID:\RoboMaster_git\power_meter\Core\Inc -ID:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\RoboMaster_git\power_meter\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\RoboMaster_git\power_meter\Drivers\CMSIS\Include -ID:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\include -ID:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS -ID:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3 -ID:\RoboMaster_git\power_meter\code_mf\Inc -ID:\RoboMaster_git\power_meter\code_mf\Src
 
 ASM_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
 
 C_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 
-C_INCLUDES = -ID:\RoboMaster_git\power_meter\Core\Inc -ID:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\RoboMaster_git\power_meter\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\RoboMaster_git\power_meter\Drivers\CMSIS\Include
+C_INCLUDES = -ID:\RoboMaster_git\power_meter\Core\Inc -ID:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\RoboMaster_git\power_meter\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\RoboMaster_git\power_meter\Drivers\CMSIS\Include -ID:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\include -ID:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS -ID:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3 -ID:\RoboMaster_git\power_meter\code_mf\Inc -ID:\RoboMaster_git\power_meter\code_mf\Src
 
 C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 

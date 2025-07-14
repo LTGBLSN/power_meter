@@ -1,0 +1,10 @@
+//
+// Created by 21481 on 2025/7/14.
+//
+
+#ifndef POWER_METER_UART_DEBUG_TASK_H
+#define POWER_METER_UART_DEBUG_TASK_H
+
+void UART_DEBUG_TASK();
+
+#endif //POWER_METER_UART_DEBUG_TASK_H

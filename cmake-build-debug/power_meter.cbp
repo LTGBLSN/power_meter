@@ -32,6 +32,11 @@
 					<Add directory="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="D:/RoboMaster_git/power_meter/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="D:/RoboMaster_git/power_meter/Drivers/CMSIS/Include"/>
+					<Add directory="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3"/>
+					<Add directory="D:/RoboMaster_git/power_meter/code_mf/Inc"/>
+					<Add directory="D:/RoboMaster_git/power_meter/code_mf/Src"/>
 					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1"/>
 					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/arm-none-eabi"/>
 					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/backward"/>
@@ -61,6 +66,11 @@
 					<Add directory="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="D:/RoboMaster_git/power_meter/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="D:/RoboMaster_git/power_meter/Drivers/CMSIS/Include"/>
+					<Add directory="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3"/>
+					<Add directory="D:/RoboMaster_git/power_meter/code_mf/Inc"/>
+					<Add directory="D:/RoboMaster_git/power_meter/code_mf/Src"/>
 					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1"/>
 					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/arm-none-eabi"/>
 					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/backward"/>
@@ -96,6 +106,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Inc/FreeRTOSConfig.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Inc/dma.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Inc/gpio.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
@@ -108,6 +124,15 @@
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Inc/stm32f1xx_it.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Inc/usart.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/dma.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/freertos.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/gpio.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
@@ -115,6 +140,9 @@
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/stm32f1xx_hal_timebase_tim.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/stm32f1xx_it.c">
@@ -127,6 +155,9 @@
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/system_stm32f1xx.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/usart.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Startup/startup_stm32f103c8tx.s">
@@ -258,6 +289,9 @@
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
@@ -280,6 +314,9 @@
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
@@ -327,7 +364,115 @@
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/list.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/task.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/STM32F103C8TX_FLASH.ld">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Inc/LED_TASK.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Inc/UART_DEBUG_TASK.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Inc/uart_printf.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Src/LED_TASK.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Src/UART_DEBUG_TASK.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Src/uart_printf.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/CMakeLists.txt">
