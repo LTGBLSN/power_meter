@@ -1,0 +1,126 @@
+C51 COMPILER V9.60.0.0   HX711                                                             03/29/2021 09:04:12 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE HX711
+OBJECT MODULE PLACED IN .\Output\HX711.obj
+COMPILER INVOKED BY: D:\Software\KeilC51\C51\BIN\C51.EXE Code\HX711\HX711.c OPTIMIZE(8,SPEED) BROWSE INCDIR(.\Include;.\
+                    -Code\HX711;.\Code\KEY;.\Code\ADC;.\Code\DS18B20) DEFINE(FOSC_160000) DEBUG OBJECTEXTEND PRINT(.\LST\HX711.lst) TABS(2) O
+                    -BJECT(.\Output\HX711.obj)
+
+line level    source
+
+   1          #include "HX711.h"
+   2          #include "Delay.h"
+   3          
+   4          UINT32 HX711_Buffer;
+   5          UINT32 Weight_MaopiAD;
+   6          s32 gWeight_Maopi;
+   7          UINT32 Weight_ShiwuAD;
+   8          s32 Weight_Shiwu;
+   9          UINT8 Flag_Error = 0;
+  10          
+  11          //校准参数
+  12          //因为不同的传感器特性曲线不是很一致，因此，每一个传感器需要矫正这里这个参数才能使测量值很准确。
+  13          //当发现测试出来的重量偏大时，增加该数值。
+  14          //如果测试出来的重量偏小时，减小改数值。
+  15          //该值可以为小数
+  16          #define GapValue 456.5
+  17          
+  18          UINT8 gDigit = 0; //位数
+  19          
+  20          
+  21          void Init_HX711pin(void)
+  22          {
+  23   1        P0M1 &= ~0x02;P0M2 |= 0x02; //P03 TM7711 时钟线
+  24   1        P0M1 |= 0x01;P0M2 &= ~0x01; //P04 TM7711 数据线
+  25   1      }
+  26          
+  27          void Delay__hx711_us(unsigned char t)
+  28          {
+  29   1        while(t--);
+  30   1      }
+  31          
+  32          
+  33          
+  34          //****************************************************
+  35          //读取HX711
+  36          //****************************************************
+  37          UINT32 HX711_Read(void) //增益128
+  38          {
+  39   1        unsigned long count; 
+  40   1        unsigned char i; 
+  41   1        SCL_L; 
+  42   1        count=0; 
+  43   1        while(SDA_R); 
+  44   1        //clr_EA;//禁止所有中断
+  45   1        for(i=0;i<24;i++)
+  46   1        { 
+  47   2          SCL_H; 
+  48   2          count=count<<1; 
+  49   2          //Delay__hx711_us(2);
+  50   2          SCL_L; 
+  51   2          if(SDA_R)
+  52   2          count++; 
+  53   2        } 
+C51 COMPILER V9.60.0.0   HX711                                                             03/29/2021 09:04:12 PAGE 2   
+
+  54   1        SCL_H; 
+  55   1        count=count^0x800000;//第25个脉冲下降沿来时，转换数据
+  56   1        SCL_L;
+  57   1        //set_EA;//使能全部中断
+  58   1        return(count);
+  59   1      }
+  60          
+  61          //****************************************************
+  62          //获取毛皮重量
+  63          //****************************************************
+  64          void Get_Maopi(void)
+  65          {
+  66   1        Weight_MaopiAD = HX711_Read();  
+  67   1        
+  68   1        //gWeight_Maopi = (unsigned int)((float)Weight_MaopiAD/GapValue); 
+  69   1      } 
+  70          
+  71          //****************************************************
+  72          //称重
+  73          //****************************************************
+  74          void Get_Weight(void)
+  75          {
+  76   1        unsigned int X;
+  77   1        HX711_Buffer = HX711_Read();
+  78   1        if(HX711_Buffer > Weight_MaopiAD)     
+  79   1        {
+  80   2          Weight_ShiwuAD = HX711_Buffer;
+  81   2          Weight_ShiwuAD = Weight_ShiwuAD - Weight_MaopiAD;       //获取实物的AD采样数值。
+  82   2        
+  83   2          //if(Weight_Shiwu == 0) || (Weight_Shiwu)
+  84   2          Weight_Shiwu = (unsigned int)((float)Weight_ShiwuAD/GapValue);  //计算实物的实际重量
+  85   2                                          //因为不同的传感器特性曲线不一样，因此，每一个传感器需要矫正这里的GapValue这个除数。
+  86   2                                          //当发现测试出来的重量偏大时，增加该数值。
+  87   2                                          //如果测试出来的重量偏小时，减小改数值。
+  88   2          
+  89   2          //P05 = 0x00;
+  90   2        }
+  91   1        
+  92   1        X = Weight_Shiwu;
+  93   1        gDigit = 0;
+  94   1        while(X)
+  95   1        {
+  96   2          X/=10; 
+  97   2          gDigit++;
+  98   2        }
+  99   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    262    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     22       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

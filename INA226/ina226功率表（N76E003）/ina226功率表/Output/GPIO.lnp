@@ -1,0 +1,11 @@
+".\Output\GPIO.obj",
+".\Output\Common.obj",
+".\Output\Delay.obj",
+".\Output\IIC_INA226.obj",
+".\Output\INA226_APP.obj",
+".\Output\oled.obj",
+".\Output\STARTUP.obj" 
+TO ".\Output\GPIO" 
+PRINT(".\LST\GPIO.m51") RAMSIZE(256) 
+DISABLEWARNING (16) 
+CODE( 0X1000-0X4FFF )

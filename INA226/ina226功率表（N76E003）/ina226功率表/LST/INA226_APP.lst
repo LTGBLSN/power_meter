@@ -1,0 +1,100 @@
+C51 COMPILER V9.60.0.0   INA226_APP                                                        08/01/2022 16:51:01 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE INA226_APP
+OBJECT MODULE PLACED IN .\Output\INA226_APP.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE Code\INA226_APP.c LARGE OPTIMIZE(0,SPEED) BROWSE INCDIR(.\Include;.\Code
+                    -\HX711;.\Code\KEY;.\Code\ADC;.\Code\DS18B20) DEFINE(FOSC_160000) DEBUG OBJECTEXTEND PRINT(.\LST\INA226_APP.lst) OBJECT(.
+                    -\Output\INA226_APP.obj)
+
+line level    source
+
+   1          #include "INA226_APP.h"
+   2          #include "IIC_INA226.h"
+   3          #include "Delay.h"
+   4          
+   5          
+   6          
+   7          
+   8          /************************************************************
+   9          新版
+  10          *************************************************************/
+  11          unsigned int iread(unsigned char sla,unsigned char suba)
+  12          { 
+  13   1              pdata unsigned int out;
+  14   1        I2CStart();               /*启动总线*/
+  15   1        I2CSendByte(sla);            /*发送器件地址*/
+  16   1        if(!(I2CWaitAck()))return 0;  
+  17   1        I2CSendByte(suba);            /*发送器件子地址*/
+  18   1        if(!(I2CWaitAck()))return 0; 
+  19   1        I2CStart();               /*启动总线*/
+  20   1        I2CSendByte(sla+1);
+  21   1        if(!(I2CWaitAck()))return 0; 
+  22   1        out=I2CReceiveByte();/*发送数据*/
+  23   1        out*=256;
+  24   1        I2CAck();  /*发送就答位*/   
+  25   1        out+=I2CReceiveByte();
+  26   1        I2CNoAck();
+  27   1        I2CStop();                  /*结束总线*/ 
+  28   1        return out;
+  29   1      }
+  30          
+  31          
+  32          
+  33          INA226 INA226_data = {0,0,0,0,0.9875};
+  34          
+  35          
+  36          
+  37          bit high_flag = 0;
+  38          
+  39          bit write_ina226(uint8_t address, uint8_t con1, uint8_t con2)     //写0H   0x0927
+  40          { 
+  41   1        I2CStart();             
+  42   1        I2CSendByte(INA226_ADDR1);
+  43   1        if(!(I2CWaitAck()))return 0; 
+  44   1        I2CSendByte(address);               /*发送数据*/
+  45   1        if(!(I2CWaitAck()))return 0;
+  46   1        I2CSendByte(con1);               /*发送数据*/
+  47   1        if(!(I2CWaitAck()))return 0;
+  48   1        I2CSendByte(con2);               /*发送数据*/
+  49   1        if(!(I2CWaitAck()))return 0;
+  50   1        I2CStop(); /*结束总线*/        
+  51   1        return 1;
+  52   1      }
+  53          void Read_INA226()                       //读电流，电压，温度
+C51 COMPILER V9.60.0.0   INA226_APP                                                        08/01/2022 16:51:01 PAGE 2   
+
+  54          {
+  55   1              INA226_data.Read_Data[0]=iread(0x80,4);
+  56   1              INA226_data.Read_Data[1]=iread(0x80,2)*1.25;
+  57   1              
+  58   1              
+  59   1              //读电流的数值
+  60   1              if(!high_flag)
+  61   1              {
+  62   2                      INA226_data.Current_Data = INA226_data.Read_Data[0] * INA226_data.Var_Iref;
+  63   2                      INA226_data.Voltage_Data = INA226_data.Read_Data[1];// * INA226_data.Current_Data / 1000000;
+  64   2                      //buff3 = (double)Ireal;        
+  65   2              }
+  66   1        else
+  67   1              {
+  68   2                      INA226_data.Current_Data = INA226_data.Read_Data[0] * INA226_data.Var_Iref;
+  69   2                      INA226_data.Voltage_Data = INA226_data.Read_Data[1];// * INA226_data.Current_Data / 10000000;   
+  70   2                      //buff3 = (double)Ireal / 10;
+  71   2              }
+  72   1      }
+  73          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    376    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =     19    ----
+   PDATA SIZE       =      2    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

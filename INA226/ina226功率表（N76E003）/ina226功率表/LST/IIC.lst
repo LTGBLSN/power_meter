@@ -1,0 +1,201 @@
+C51 COMPILER V9.60.0.0   IIC                                                               03/29/2021 09:34:03 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE IIC
+OBJECT MODULE PLACED IN .\Output\IIC.obj
+COMPILER INVOKED BY: D:\Software\KeilC51\C51\BIN\C51.EXE Code\IIC.c OPTIMIZE(8,SPEED) BROWSE INCDIR(.\Include;.\Code\HX7
+                    -11;.\Code\KEY;.\Code\ADC;.\Code\DS18B20) DEFINE(FOSC_160000) DEBUG OBJECTEXTEND PRINT(.\LST\IIC.lst) TABS(2) OBJECT(.\Ou
+                    -tput\IIC.obj)
+
+line level    source
+
+   1          #include "IIC.h"
+   2          #include "N76E003.h"
+   3          #include "SFR_Macro.h"
+   4          #include "Function_define.h"
+   5          
+   6          #include "Delay.h"
+   7          //   
+   8          //本程序只供学习使用，未经作者许可，不得用于其它任何用途
+   9          //ALIENTEK STM32F429开发板
+  10          //IIC驱动代码    
+  11          //正点原子@ALIENTEK
+  12          //技术论坛:www.openedv.com
+  13          //创建日期:2016/1/13
+  14          //版本：V1.0
+  15          //版权所有，盗版必究。
+  16          //Copyright(C) 广州市星翼电子科技有限公司 2014-2024
+  17          //All rights reserved                   
+  18          //  
+  19          
+  20          #define OLED_SCLK_Clr() SCL=0
+  21          #define OLED_SCLK_Set() SCL=1
+  22          #define OLED_SDIN_Clr() SDA=0
+  23          #define OLED_SDIN_Set() SDA=1
+  24          
+  25          
+  26          #define SYS_CLK_EN              0
+  27          #define SYS_SEL                 2
+  28          #define SYS_DIV_EN              0                   //0: Fsys=Fosc, 1: Fsys = Fosc/(2*CKDIV)
+  29          #define SYS_DIV                 1
+  30          #define I2C_CLOCK               2
+  31          #define TEST_OK                 0x00
+  32          bit I2C_Reset_Flag;
+  33          
+  34          #define OLED_CMD  0 //???
+  35          #define OLED_DATA 1 //???
+  36          #define OLED_MODE 0
+  37          #define SIZE 16
+  38          #define XLevelL   0x02
+  39          #define XLevelH   0x10
+  40          #define Max_Column  128
+  41          #define Max_Row   64
+  42          #define Brightness  0xFF 
+  43          #define X_WIDTH   128
+  44          #define Y_WIDTH   64  
+  45           
+  46          //IIC初始化
+  47          void IIC_Init(void)
+  48          {
+  49   1          P13_OpenDrain_Mode;         // Modify SCL pin to Open drain mode. don't forget the pull high resister in cir
+             -cuit
+  50   1          P14_OpenDrain_Mode;         // Modify SDA pin to Open drain mode. don't forget the pull high resister in cir
+             -cuit
+  51   1        
+C51 COMPILER V9.60.0.0   IIC                                                               03/29/2021 09:34:03 PAGE 2   
+
+  52   1          /* Set I2C clock rate */
+  53   1          I2CLK = I2C_CLOCK; 
+  54   1      
+  55   1          /* Enable I2C */
+  56   1          set_I2CEN;   
+  57   1      
+  58   1          //IIC_SDA=1;
+  59   1          //IIC_SCL=1;  
+  60   1      }
+  61           
+  62          //产生IIC起始信号
+  63          void IIC_Start(void)
+  64          {
+  65   1        OLED_SCLK_Set() ;
+  66   1        OLED_SDIN_Set();
+  67   1        OLED_SDIN_Clr();
+  68   1        OLED_SCLK_Clr();
+  69   1      }   
+  70          //产生IIC停止信号
+  71          void IIC_Stop(void)
+  72          {
+  73   1        OLED_SCLK_Set();
+  74   1        OLED_SDIN_Clr();
+  75   1        OLED_SDIN_Set();        
+  76   1      }
+  77          //等待应答信号到来
+  78          //返回值：1，接收应答失败
+  79          //        0，接收应答成功
+  80          uint8_t IIC_Wait_Ack()
+  81          {
+  82   1        while(1)
+  83   1        {
+  84   2          if(!SDA)        //???????????
+  85   2          {
+  86   3            break;
+  87   3          }
+  88   2        }
+  89   1        OLED_SCLK_Set();
+  90   1        OLED_SCLK_Clr();   
+  91   1        
+  92   1        return 0;  
+  93   1      } 
+  94          //产生ACK应答
+  95          void IIC_Ack(void)
+  96          {
+  97   1        //IIC_SCL=0;
+  98   1        OLED_SCLK_Clr();   
+  99   1        //SDA_OUT();
+ 100   1        //IIC_SDA=0;
+ 101   1        OLED_SDIN_Clr();
+ 102   1        //delay_us(2);
+ 103   1        //IIC_SCL=1;
+ 104   1        OLED_SCLK_Set();
+ 105   1        //delay_us(2);
+ 106   1        //IIC_SCL=0;
+ 107   1        OLED_SCLK_Set();
+ 108   1      }
+ 109          //不产生ACK应答       
+ 110          void IIC_NAck(void)
+ 111          {
+ 112   1        //IIC_SCL=0;
+ 113   1        OLED_SCLK_Clr();
+C51 COMPILER V9.60.0.0   IIC                                                               03/29/2021 09:34:03 PAGE 3   
+
+ 114   1        //SDA_OUT();
+ 115   1        //IIC_SDA=1;
+ 116   1        OLED_SDIN_Set();
+ 117   1        //delay_us(2);
+ 118   1        //IIC_SCL=1;
+ 119   1        OLED_SCLK_Set();
+ 120   1        //delay_us(2);
+ 121   1        //IIC_SCL=0;
+ 122   1        OLED_SCLK_Clr();
+ 123   1      }                      
+ 124          //IIC发送一个字节
+ 125          //返回从机有无应答
+ 126          //1，有应答
+ 127          //0，无应答       
+ 128          void IIC_Send_Byte(uint8_t IIC_Byte)
+ 129          {                        
+ 130   1        unsigned char i;
+ 131   1        uint8_t m,da;
+ 132   1        da=IIC_Byte;
+ 133   1        OLED_SCLK_Clr();
+ 134   1        for(i=0;i<8;i++)    
+ 135   1        {
+ 136   2            m=da;
+ 137   2          m=m&0x80;
+ 138   2          if(m==0x80)
+ 139   2          {OLED_SDIN_Set();}
+ 140   2          else OLED_SDIN_Clr();
+ 141   2            da=da<<1;
+ 142   2          OLED_SCLK_Set();
+ 143   2          OLED_SCLK_Clr();
+ 144   2          }
+ 145   1      }       
+ 146          //读1个字节，ack=1时，发送ACK，ack=0，发送nACK   
+ 147          uint8_t IIC_Read_Byte(unsigned char ack)
+ 148          {
+ 149   1        unsigned char i,receive=0;
+ 150   1        //SDA_IN();//SDA设置为输入
+ 151   1          for(i=0;i<8;i++ )
+ 152   1        {
+ 153   2              //IIC_SCL=0; 
+ 154   2          OLED_SCLK_Clr();
+ 155   2              //delay_us(2);
+ 156   2          //IIC_SCL=1;
+ 157   2          OLED_SCLK_Set();
+ 158   2              receive<<=1;
+ 159   2              if(SDA)
+ 160   2                receive++;   
+ 161   2          //delay_us(1); 
+ 162   2          }          
+ 163   1          if (!ack)
+ 164   1              IIC_NAck();//发送nACK
+ 165   1          else
+ 166   1              IIC_Ack(); //发送ACK   
+ 167   1          return receive;
+ 168   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    146    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+C51 COMPILER V9.60.0.0   IIC                                                               03/29/2021 09:34:03 PAGE 4   
+
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

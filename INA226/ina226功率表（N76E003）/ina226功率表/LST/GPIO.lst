@@ -1,0 +1,205 @@
+C51 COMPILER V9.60.0.0   GPIO                                                              08/01/2022 16:51:00 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE GPIO
+OBJECT MODULE PLACED IN .\Output\GPIO.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE Code\GPIO.C LARGE OPTIMIZE(0,SPEED) BROWSE INCDIR(.\Include;.\Code\HX711
+                    -;.\Code\KEY;.\Code\ADC;.\Code\DS18B20) DEFINE(FOSC_160000) DEBUG OBJECTEXTEND PRINT(.\LST\GPIO.lst) OBJECT(.\Output\GPIO
+                    -.obj)
+
+line level    source
+
+   1          /*--------------------------------------------------------------------------------------------------------
+             --*/
+   2          /*                                                                                                        
+             - */
+   3          /* Copyright(c) 2017 Nuvoton Technology Corp. All rights reserved.                                        
+             - */
+   4          /*                                                                                                        
+             - */
+   5          /*--------------------------------------------------------------------------------------------------------
+             --*/
+   6          
+   7          //********************************************************************************************************
+             -***
+   8          //  Website: http://www.nuvoton.com
+   9          //  E-Mail : MicroC-8bit@nuvoton.com
+  10          //  Date   : Jan/21/2017
+  11          //********************************************************************************************************
+             -***
+  12          
+  13          //********************************************************************************************************
+             -***
+  14          //  File Function: N76E003 GPIO demo code
+  15          //********************************************************************************************************
+             -***
+  16          #include "N76E003.h"
+  17          #include "SFR_Macro.h"
+  18          #include "Function_define.h"
+  19          #include "Common.h"
+  20          #include "Delay.h"
+  21          #include "stdlib.h"
+  22          #include "stdio.h"
+  23          #include "IIC_INA226.h"
+  24          #include "INA226_APP.h"
+  25          #include "oled.h"
+  26          
+  27          
+  28          
+  29          int time1=0;
+  30          
+  31          //浮点十六进制数转10进制
+  32          
+  33          uint32_t vE=0;
+  34          
+  35          uint16_t Voltage;
+  36          
+  37          uint8_t Current[8];     
+  38          
+  39          
+  40          void main (void) 
+  41          {
+  42   1              IIC_Init();             //初始化INA226
+  43   1              write_ina226(0x05,0x00,0x36);
+  44   1              write_ina226(0x00,0x0B,0x27);
+C51 COMPILER V9.60.0.0   GPIO                                                              08/01/2022 16:51:00 PAGE 2   
+
+  45   1              OLED_Init();                    //初始化OLED  
+  46   1              
+  47   1      //      OLED_ShowCHinese48(0,0,0);      //电
+  48   1      //      OLED_ShowCHinese48(28,0,4);     //压
+  49   1      //      
+  50   1      //      OLED_ShowCHinese48(0,4,0);      //电
+  51   1      //      OLED_ShowCHinese48(28,4,8);     //流
+  52   1              
+  53   1      //      Timer1_Delay10ms(200);
+  54   1              
+  55   1              OLED_Clear();
+  56   1      
+  57   1        while(1)
+  58   1        {
+  59   2                      Read_INA226();
+  60   2                      //Timer1_Delay10ms(10);
+  61   2                      //电压赋值显示
+  62   2                      //sprintf(Voltage,"%f",INA226_data.Voltage_Data);
+  63   2                      if(INA226_data.Voltage_Data <= 9999)                                                                                                    //一位数
+  64   2                      {
+  65   3                              OLED_ShowChar48(0,0,(uint8_t)(INA226_data.Voltage_Data/1000) * 2);      //个位
+  66   3                              OLED_ShowChar48(16,0,10 * 2);                                   //小数点
+  67   3                              OLED_ShowChar48(32,0,(uint8_t)(INA226_data.Voltage_Data/100%10) * 2);   //1位
+  68   3                              OLED_ShowChar48(48,0,(uint8_t)(INA226_data.Voltage_Data/10%10) * 2);    //2位
+  69   3                              //OLED_ShowChar48(64,0,(uint8_t)(INA226_data.Voltage_Data/1%10) * 2);   //3位
+  70   3                              OLED_ShowChar48(64,0,12 * 2);                                   //单位V
+  71   3                      }
+  72   2                      else
+  73   2                      {
+  74   3                              OLED_ShowChar48(0,0,(uint8_t)(INA226_data.Voltage_Data/10000) * 2);     //十位
+  75   3                              OLED_ShowChar48(16,0,(uint8_t)(INA226_data.Voltage_Data/1000%10) * 2);  //个位
+  76   3                              OLED_ShowChar48(32,0,10 * 2);                                   //小数点
+  77   3                              OLED_ShowChar48(48,0,(uint8_t)(INA226_data.Voltage_Data/1000%10) * 2);  //1位
+  78   3                              //OLED_ShowChar48(64+36,0,(uint8_t)(INA226_data.Voltage_Data/100%10) * 2);      //2位
+  79   3                              //OLED_ShowChar48(64,0,(uint8_t)(INA226_data.Voltage_Data/1%10) * 2);   //3位
+  80   3                              OLED_ShowChar48(64,0,12 * 2);                                   //单位V
+  81   3                      }
+  82   2                      
+  83   2                      //电流赋值显示
+  84   2                      sprintf(Current,"%f",INA226_data.Current_Data*48.5);//分流电阻为 0.002欧*48.5
+  85   2                      
+  86   2                      if((Current[0] > 0) && (Current[1] == '.'))     //电流为10mA以下，1mA以上
+  87   2                      {
+  88   3                              OLED_ShowChar48(0,4,(Current[0]-0x30) * 2);     //个位
+  89   3                              OLED_ShowChar48(16,4,10 * 2);                                   //小数点
+  90   3                              OLED_ShowChar48(32,4,(Current[2]-0x30) * 2);    //1位
+  91   3                              OLED_ShowChar48(48,4,(Current[3]-0x30) * 2);    //2位
+  92   3                              OLED_ShowChar48(64,4,(Current[4]-0x30) * 2);    //3位
+  93   3                              OLED_ShowChar48(80,4,13 * 2);                                   //单位m
+  94   3                              OLED_ShowChar48(96,4,14 * 2);                                   //单位A
+  95   3                      }
+  96   2                      else if((Current[0] > 0) && (Current[2] == '.'))        //两位整数，电流为100mA以下,10mA以上
+  97   2                      {
+  98   3                              OLED_ShowChar48(0,4,(Current[0]-0x30) * 2);     //十位
+  99   3                              OLED_ShowChar48(16,4,(Current[1]-0x30) * 2);    //个位
+ 100   3                              OLED_ShowChar48(32,4,10 * 2);                                   //小数点
+ 101   3                              OLED_ShowChar48(48,4,(Current[3]-0x30) * 2);    //1位
+ 102   3                              OLED_ShowChar48(64,4,(Current[4]-0x30) * 2);    //2位
+ 103   3                              OLED_ShowChar48(80,4,13 * 2);                                   //单位m
+ 104   3                              OLED_ShowChar48(96,4,14 * 2);                                   //单位A
+ 105   3                      }
+ 106   2                      else if((Current[0] > 0) && (Current[3] == '.'))        //三位整数，电流为1000mA以下,100mA以上
+C51 COMPILER V9.60.0.0   GPIO                                                              08/01/2022 16:51:00 PAGE 3   
+
+ 107   2                      {
+ 108   3                              OLED_ShowChar48(0,4,(Current[0]-0x30) * 2);     //百位
+ 109   3                              OLED_ShowChar48(16,4,(Current[1]-0x30) * 2);    //十位
+ 110   3                              OLED_ShowChar48(32,4,(Current[2]-0x30) * 2);    //个位
+ 111   3                              OLED_ShowChar48(48,4,10 * 2);                                   //小数点
+ 112   3                              OLED_ShowChar48(64,4,(Current[4]-0x30) * 2);    //1位
+ 113   3                              OLED_ShowChar48(80,4,13 * 2);                                   //单位m
+ 114   3                              OLED_ShowChar48(96,4,14 * 2);                                   //单位A
+ 115   3                      }
+ 116   2                      else if((Current[0] > 0) && (Current[4] == '.'))        //四位整数，电流为1000mA以上（切换单位：A）
+ 117   2                      {
+ 118   3                              OLED_ShowChar48(0,4,(Current[0]-0x30) * 2);     //个位
+ 119   3                              OLED_ShowChar48(16,4,10 * 2);                                   //小数点
+ 120   3                              OLED_ShowChar48(32,4,(Current[2]-0x30) * 2);    //1位
+ 121   3                              OLED_ShowChar48(48,4,(Current[2]-0x30) * 2);    //2位
+ 122   3                              OLED_ShowChar48(64,4,(Current[2]-0x30) * 2);    //3位
+ 123   3                              OLED_ShowChar48(80,4,14 * 2);                                   //单位A
+ 124   3                              OLED_ShowString(96,4,"  ");
+ 125   3                              
+ 126   3                      }
+ 127   2                      else if((Current[0] == 0) && (Current[1] == '.'))       //电流为1mA以下，0.1mA以上（切换单位：uA）
+ 128   2                      {
+ 129   3                              OLED_ShowChar48(0,4,(Current[2]-0x30) * 2);     //百位
+ 130   3                              OLED_ShowChar48(16,4,(Current[3]-0x30) * 2);    //十位
+ 131   3                              OLED_ShowChar48(32,4,(Current[4]-0x30) * 2);    //个位
+ 132   3                              OLED_ShowChar48(48,4,10 * 2);                                   //小数点
+ 133   3                              OLED_ShowChar48(64,4,(Current[6]-0x30) * 2);    //1位
+ 134   3                              OLED_ShowChar48(80,4,15 * 2);                                   //单位u
+ 135   3                              OLED_ShowChar48(96,4,14 * 2);                                   //单位A
+ 136   3                      }
+ 137   2                      else if((Current[0] == 0) && (Current[1] == '.') && (Current[2] == 0))  //电流为0.1mA以下，10uA以上
+ 138   2                      {
+ 139   3                              OLED_ShowChar48(0,4,(Current[3]-0x30) * 2);     //十位
+ 140   3                              OLED_ShowChar48(16,4,(Current[4]-0x30) * 2);    //个位
+ 141   3                              OLED_ShowChar48(32,4,10 * 2);                                   //小数点
+ 142   3                              OLED_ShowChar48(48,4,(Current[6]-0x30) * 2);    //1位
+ 143   3                              OLED_ShowChar48(64,4,(Current[7]-0x30) * 2);    //2位
+ 144   3                              OLED_ShowChar48(80,4,15 * 2);                                   //单位u
+ 145   3                              OLED_ShowChar48(96,4,14 * 2);                                   //单位A
+ 146   3                      }
+ 147   2                      else if((Current[0] == 0) && (Current[1] == '.') && (Current[2] == 0) && (Current[3] == 0))     //电流为10uA
+             -以下，1uA以上
+ 148   2                      {
+ 149   3                              OLED_ShowChar48(0,4,(Current[4]-0x30) * 2);     //个位
+ 150   3                              OLED_ShowChar48(16,4,10 * 2);                                   //小数点
+ 151   3                              OLED_ShowChar48(32,4,(Current[6]-0x30) * 2);    //1位
+ 152   3                              OLED_ShowChar48(48,4,(Current[7]-0x30) * 2);    //2位
+ 153   3                              OLED_ShowChar48(64,4,15 * 2);                                   //单位u
+ 154   3                              OLED_ShowChar48(80,4,14 * 2);                                   //单位A
+ 155   3                      }
+ 156   2                      //#endif
+ 157   2        }//while(1)
+ 158   1      
+ 159   1              
+ 160   1      
+ 161   1      }
+ 162          
+ 163          
+ 164          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+C51 COMPILER V9.60.0.0   GPIO                                                              08/01/2022 16:51:00 PAGE 4   
+
+   CODE SIZE        =   1326    ----
+   CONSTANT SIZE    =      6    ----
+   XDATA SIZE       =     16    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
