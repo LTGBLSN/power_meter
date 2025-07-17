@@ -1,0 +1,10 @@
+//
+// Created by 21481 on 2025/7/15.
+//
+
+#ifndef POWER_METER_GET_POWER_TASK_H
+#define POWER_METER_GET_POWER_TASK_H
+
+void GET_POWER_TASK();
+
+#endif //POWER_METER_GET_POWER_TASK_H

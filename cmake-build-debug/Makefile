@@ -200,6 +200,30 @@ Core/Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Core/Src/gpio.c.s
 .PHONY : Core/Src/gpio.c.s
 
+Core/Src/i2c.obj: Core/Src/i2c.c.obj
+.PHONY : Core/Src/i2c.obj
+
+# target to build an object file
+Core/Src/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj
+.PHONY : Core/Src/i2c.c.obj
+
+Core/Src/i2c.i: Core/Src/i2c.c.i
+.PHONY : Core/Src/i2c.i
+
+# target to preprocess a source file
+Core/Src/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.i
+.PHONY : Core/Src/i2c.c.i
+
+Core/Src/i2c.s: Core/Src/i2c.c.s
+.PHONY : Core/Src/i2c.s
+
+# target to generate assembly for a file
+Core/Src/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.s
+.PHONY : Core/Src/i2c.c.s
+
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -592,6 +616,30 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj
 
@@ -976,6 +1024,30 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+code_mf/Src/GET_POWER_TASK.obj: code_mf/Src/GET_POWER_TASK.c.obj
+.PHONY : code_mf/Src/GET_POWER_TASK.obj
+
+# target to build an object file
+code_mf/Src/GET_POWER_TASK.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj
+.PHONY : code_mf/Src/GET_POWER_TASK.c.obj
+
+code_mf/Src/GET_POWER_TASK.i: code_mf/Src/GET_POWER_TASK.c.i
+.PHONY : code_mf/Src/GET_POWER_TASK.i
+
+# target to preprocess a source file
+code_mf/Src/GET_POWER_TASK.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.i
+.PHONY : code_mf/Src/GET_POWER_TASK.c.i
+
+code_mf/Src/GET_POWER_TASK.s: code_mf/Src/GET_POWER_TASK.c.s
+.PHONY : code_mf/Src/GET_POWER_TASK.s
+
+# target to generate assembly for a file
+code_mf/Src/GET_POWER_TASK.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.s
+.PHONY : code_mf/Src/GET_POWER_TASK.c.s
+
 code_mf/Src/LED_TASK.obj: code_mf/Src/LED_TASK.c.obj
 .PHONY : code_mf/Src/LED_TASK.obj
 
@@ -1024,6 +1096,30 @@ code_mf/Src/UART_DEBUG_TASK.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.s
 .PHONY : code_mf/Src/UART_DEBUG_TASK.c.s
 
+code_mf/Src/bsp_ina226.obj: code_mf/Src/bsp_ina226.c.obj
+.PHONY : code_mf/Src/bsp_ina226.obj
+
+# target to build an object file
+code_mf/Src/bsp_ina226.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj
+.PHONY : code_mf/Src/bsp_ina226.c.obj
+
+code_mf/Src/bsp_ina226.i: code_mf/Src/bsp_ina226.c.i
+.PHONY : code_mf/Src/bsp_ina226.i
+
+# target to preprocess a source file
+code_mf/Src/bsp_ina226.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.i
+.PHONY : code_mf/Src/bsp_ina226.c.i
+
+code_mf/Src/bsp_ina226.s: code_mf/Src/bsp_ina226.c.s
+.PHONY : code_mf/Src/bsp_ina226.s
+
+# target to generate assembly for a file
+code_mf/Src/bsp_ina226.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\power_meter.elf.dir\build.make CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.s
+.PHONY : code_mf/Src/bsp_ina226.c.s
+
 code_mf/Src/uart_printf.obj: code_mf/Src/uart_printf.c.obj
 .PHONY : code_mf/Src/uart_printf.obj
 
@@ -1066,6 +1162,9 @@ help:
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
+	@echo ... Core/Src/i2c.obj
+	@echo ... Core/Src/i2c.i
+	@echo ... Core/Src/i2c.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
@@ -1115,6 +1214,9 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.s
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.s
@@ -1163,12 +1265,18 @@ help:
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.obj
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.i
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.s
+	@echo ... code_mf/Src/GET_POWER_TASK.obj
+	@echo ... code_mf/Src/GET_POWER_TASK.i
+	@echo ... code_mf/Src/GET_POWER_TASK.s
 	@echo ... code_mf/Src/LED_TASK.obj
 	@echo ... code_mf/Src/LED_TASK.i
 	@echo ... code_mf/Src/LED_TASK.s
 	@echo ... code_mf/Src/UART_DEBUG_TASK.obj
 	@echo ... code_mf/Src/UART_DEBUG_TASK.i
 	@echo ... code_mf/Src/UART_DEBUG_TASK.s
+	@echo ... code_mf/Src/bsp_ina226.obj
+	@echo ... code_mf/Src/bsp_ina226.i
+	@echo ... code_mf/Src/bsp_ina226.s
 	@echo ... code_mf/Src/uart_printf.obj
 	@echo ... code_mf/Src/uart_printf.i
 	@echo ... code_mf/Src/uart_printf.s

@@ -20,12 +20,15 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "dma.h"
+#include "i2c.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "LED_TASK.h"
+#include "bsp_ina226.h"
+#include "GET_POWER_TASK.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,6 +49,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+float fVoltage = 0 ;
+float fCurrent = 0 ;
+float fPower = 0 ;
 
 /* USER CODE END PV */
 
@@ -92,7 +98,9 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USART1_UART_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
+
 
   /* USER CODE END 2 */
 

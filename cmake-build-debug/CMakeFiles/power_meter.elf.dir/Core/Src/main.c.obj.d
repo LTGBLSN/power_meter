@@ -30,6 +30,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj: \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_cortex.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash_ex.h \
+ D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_i2c.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pwr.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim_ex.h \
@@ -63,6 +64,9 @@ CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj: \
  D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
  D:\RoboMaster_git\power_meter\Core\Inc/dma.h \
  D:\RoboMaster_git\power_meter\Core\Inc/main.h \
+ D:\RoboMaster_git\power_meter\Core\Inc/i2c.h \
  D:\RoboMaster_git\power_meter\Core\Inc/usart.h \
  D:\RoboMaster_git\power_meter\Core\Inc/gpio.h \
- D:\RoboMaster_git\power_meter\code_mf\Inc/LED_TASK.h
+ D:\RoboMaster_git\power_meter\code_mf\Inc/LED_TASK.h \
+ D:\RoboMaster_git\power_meter\code_mf\Inc/bsp_ina226.h \
+ D:\RoboMaster_git\power_meter\code_mf\Inc/GET_POWER_TASK.h

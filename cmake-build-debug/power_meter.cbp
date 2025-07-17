@@ -115,6 +115,9 @@
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Inc/gpio.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Inc/i2c.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Inc/main.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
@@ -134,6 +137,9 @@
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/gpio.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/i2c.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Core/Src/main.c">
@@ -274,6 +280,9 @@
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
@@ -305,6 +314,9 @@
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_i2c.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
@@ -347,6 +359,9 @@
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
@@ -457,19 +472,31 @@
 		<Unit filename="D:/RoboMaster_git/power_meter/STM32F103C8TX_FLASH.ld">
 			<Option target="power_meter.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Inc/GET_POWER_TASK.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Inc/LED_TASK.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Inc/UART_DEBUG_TASK.h">
 			<Option target="power_meter.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Inc/bsp_ina226.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Inc/uart_printf.h">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Src/GET_POWER_TASK.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Src/LED_TASK.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Src/UART_DEBUG_TASK.c">
+			<Option target="power_meter.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Src/bsp_ina226.c">
 			<Option target="power_meter.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/power_meter/code_mf/Src/uart_printf.c">

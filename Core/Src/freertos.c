@@ -50,6 +50,7 @@
 osThreadId defaultTaskHandle;
 osThreadId ledHandle;
 osThreadId uart_debugHandle;
+osThreadId get_powerHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -59,6 +60,7 @@ osThreadId uart_debugHandle;
 void StartDefaultTask(void const * argument);
 void LED_TASK(void const * argument);
 void UART_DEBUG_TASK(void const * argument);
+void GET_POWER_TASK(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -116,6 +118,10 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of uart_debug */
   osThreadDef(uart_debug, UART_DEBUG_TASK, osPriorityIdle, 0, 128);
   uart_debugHandle = osThreadCreate(osThread(uart_debug), NULL);
+
+  /* definition and creation of get_power */
+  osThreadDef(get_power, GET_POWER_TASK, osPriorityIdle, 0, 128);
+  get_powerHandle = osThreadCreate(osThread(get_power), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -175,6 +181,24 @@ __weak void UART_DEBUG_TASK(void const * argument)
     osDelay(1);
   }
   /* USER CODE END UART_DEBUG_TASK */
+}
+
+/* USER CODE BEGIN Header_GET_POWER_TASK */
+/**
+* @brief Function implementing the GET_POWER thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_GET_POWER_TASK */
+__weak void GET_POWER_TASK(void const * argument)
+{
+  /* USER CODE BEGIN GET_POWER_TASK */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END GET_POWER_TASK */
 }
 
 /* Private application code --------------------------------------------------*/

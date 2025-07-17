@@ -30,6 +30,7 @@ CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj: \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_cortex.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash_ex.h \
+ D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_i2c.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pwr.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim.h \
  D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim_ex.h \
@@ -61,4 +62,5 @@ CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj: \
  D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
  D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\include/event_groups.h \
  D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
- D:\RoboMaster_git\power_meter\code_mf\Inc/uart_printf.h
+ D:\RoboMaster_git\power_meter\code_mf\Inc/uart_printf.h \
+ D:\RoboMaster_git\power_meter\code_mf\Inc/bsp_ina226.h

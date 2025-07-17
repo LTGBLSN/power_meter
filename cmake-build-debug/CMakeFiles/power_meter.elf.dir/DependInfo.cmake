@@ -38,6 +38,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/RoboMaster_git/power_meter/Core/Src/dma.c" "CMakeFiles/power_meter.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Core/Src/dma.c.obj.d"
   "D:/RoboMaster_git/power_meter/Core/Src/freertos.c" "CMakeFiles/power_meter.elf.dir/Core/Src/freertos.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Core/Src/freertos.c.obj.d"
   "D:/RoboMaster_git/power_meter/Core/Src/gpio.c" "CMakeFiles/power_meter.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Core/Src/gpio.c.obj.d"
+  "D:/RoboMaster_git/power_meter/Core/Src/i2c.c" "CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj.d"
   "D:/RoboMaster_git/power_meter/Core/Src/main.c" "CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj.d"
   "D:/RoboMaster_git/power_meter/Core/Src/stm32f1xx_hal_msp.c" "CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj.d"
   "D:/RoboMaster_git/power_meter/Core/Src/stm32f1xx_hal_timebase_tim.c" "CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj.d"
@@ -54,6 +55,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj.d"
   "D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj.d"
   "D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj.d"
+  "D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj.d"
   "D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj.d"
   "D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj.d"
   "D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d"
@@ -70,8 +72,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj.d"
   "D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/tasks.c" "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.d"
   "D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/timers.c" "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d"
+  "D:/RoboMaster_git/power_meter/code_mf/Src/GET_POWER_TASK.c" "CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj.d"
   "D:/RoboMaster_git/power_meter/code_mf/Src/LED_TASK.c" "CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj.d"
   "D:/RoboMaster_git/power_meter/code_mf/Src/UART_DEBUG_TASK.c" "CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj.d"
+  "D:/RoboMaster_git/power_meter/code_mf/Src/bsp_ina226.c" "CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj.d"
   "D:/RoboMaster_git/power_meter/code_mf/Src/uart_printf.c" "CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj" "gcc" "CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj.d"
   )
 

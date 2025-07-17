@@ -201,7 +201,6 @@
 			},
 			"sourceIndexes" : 
 			[
-				7,
 				8,
 				9,
 				10,
@@ -212,10 +211,8 @@
 				15,
 				16,
 				17,
-				73,
-				74,
-				75,
-				76,
+				18,
+				19,
 				77,
 				78,
 				79,
@@ -227,18 +224,25 @@
 				85,
 				86,
 				87,
+				88,
 				89,
 				90,
-				108,
-				109,
-				111,
-				112,
+				91,
+				92,
+				94,
+				95,
 				113,
 				114,
-				115,
+				116,
+				117,
+				118,
 				119,
 				120,
-				121
+				126,
+				127,
+				128,
+				129,
+				130
 			]
 		},
 		{
@@ -353,7 +357,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				18
+				20
 			]
 		}
 	],
@@ -423,11 +427,10 @@
 				4,
 				5,
 				6,
-				19,
-				20,
+				7,
 				21,
+				22,
 				23,
-				24,
 				25,
 				26,
 				27,
@@ -447,8 +450,8 @@
 				41,
 				42,
 				43,
+				44,
 				45,
-				46,
 				47,
 				48,
 				49,
@@ -474,12 +477,11 @@
 				69,
 				70,
 				71,
-				88,
-				91,
-				92,
+				72,
+				73,
+				74,
+				75,
 				93,
-				94,
-				95,
 				96,
 				97,
 				98,
@@ -492,17 +494,23 @@
 				105,
 				106,
 				107,
+				108,
+				109,
 				110,
-				116,
-				117,
-				118
+				111,
+				112,
+				115,
+				121,
+				122,
+				123,
+				124,
+				125
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				7,
 				8,
 				9,
 				10,
@@ -513,10 +521,8 @@
 				15,
 				16,
 				17,
-				73,
-				74,
-				75,
-				76,
+				18,
+				19,
 				77,
 				78,
 				79,
@@ -528,29 +534,36 @@
 				85,
 				86,
 				87,
+				88,
 				89,
 				90,
-				108,
-				109,
-				111,
-				112,
+				91,
+				92,
+				94,
+				95,
 				113,
 				114,
-				115,
+				116,
+				117,
+				118,
 				119,
 				120,
-				121
+				126,
+				127,
+				128,
+				129,
+				130
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				18,
-				22,
-				44,
-				72,
-				122
+				20,
+				24,
+				46,
+				76,
+				131
 			]
 		}
 	],
@@ -569,6 +582,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Core/Inc/gpio.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Inc/i2c.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -607,6 +625,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/gpio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/i2c.c",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -850,6 +874,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"path" : "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h",
 			"sourceGroupIndex" : 0
 		},
@@ -901,6 +930,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_i2c.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -979,6 +1013,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1174,6 +1214,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "code_mf/Inc/GET_POWER_TASK.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"path" : "code_mf/Inc/LED_TASK.h",
 			"sourceGroupIndex" : 0
 		},
@@ -1184,8 +1229,19 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "code_mf/Inc/bsp_ina226.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"path" : "code_mf/Inc/uart_printf.h",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "code_mf/Src/GET_POWER_TASK.c",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
@@ -1197,6 +1253,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "code_mf/Src/UART_DEBUG_TASK.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "code_mf/Src/bsp_ina226.c",
 			"sourceGroupIndex" : 1
 		},
 		{

@@ -41,7 +41,9 @@ extern "C" {
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-
+extern float fVoltage ;
+extern float fCurrent ;
+extern float fPower ;
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/

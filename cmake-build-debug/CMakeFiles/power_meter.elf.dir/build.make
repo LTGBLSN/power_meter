@@ -110,10 +110,24 @@ CMakeFiles/power_meter.elf.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/power_meter.elf.dir/Core/Src/gpio.c.s"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\power_meter\Core\Src\gpio.c -o CMakeFiles\power_meter.elf.dir\Core\Src\gpio.c.s
 
+CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
+CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj: D:/RoboMaster_git/power_meter/Core/Src/i2c.c
+CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\i2c.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\i2c.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\i2c.c
+
+CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\power_meter\Core\Src\i2c.c > CMakeFiles\power_meter.elf.dir\Core\Src\i2c.c.i
+
+CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\power_meter\Core\Src\i2c.c -o CMakeFiles\power_meter.elf.dir\Core\Src\i2c.c.s
+
 CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj: D:/RoboMaster_git/power_meter/Core/Src/main.c
 CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\main.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\main.c
 
 CMakeFiles/power_meter.elf.dir/Core/Src/main.c.i: cmake_force
@@ -127,7 +141,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: D:/RoboMaster_git/power_meter/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -141,7 +155,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj: D:/RoboMaster_git/power_meter/Core/Src/stm32f1xx_hal_timebase_tim.c
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\stm32f1xx_hal_timebase_tim.c
 
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.s: cmake_fo
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_it.c.obj: D:/RoboMaster_git/power_meter/Core/Src/stm32f1xx_it.c
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_it.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\stm32f1xx_it.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 CMakeFiles/power_meter.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Src/syscalls.c.obj: D:/RoboMaster_git/power_meter/Core/Src/syscalls.c
 CMakeFiles/power_meter.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/syscalls.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\syscalls.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\syscalls.c
 
 CMakeFiles/power_meter.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/power_meter.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Src/sysmem.c.obj: D:/RoboMaster_git/power_meter/Core/Src/sysmem.c
 CMakeFiles/power_meter.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/sysmem.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\sysmem.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\sysmem.c
 
 CMakeFiles/power_meter.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/power_meter.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Src/system_stm32f1xx.c.obj: D:/RoboMaster_git/power_meter/Core/Src/system_stm32f1xx.c
 CMakeFiles/power_meter.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/system_stm32f1xx.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\system_stm32f1xx.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/power_meter.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 CMakeFiles/power_meter.elf.dir/Core/Src/usart.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Src/usart.c.obj: D:/RoboMaster_git/power_meter/Core/Src/usart.c
 CMakeFiles/power_meter.elf.dir/Core/Src/usart.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/power_meter.elf.dir/Core/Src/usart.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\power_meter.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\power_meter.elf.dir\Core\Src\usart.c.obj -c D:\RoboMaster_git\power_meter\Core\Src\usart.c
 
 CMakeFiles/power_meter.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -224,7 +238,7 @@ CMakeFiles/power_meter.elf.dir/Core/Src/usart.c.s: cmake_force
 
 CMakeFiles/power_meter.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: D:/RoboMaster_git/power_meter/Core/Startup/startup_stm32f103c8tx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object CMakeFiles/power_meter.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object CMakeFiles/power_meter.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\power_meter.elf.dir\Core\Startup\startup_stm32f103c8tx.s.obj -c D:\RoboMaster_git\power_meter\Core\Startup\startup_stm32f103c8tx.s
 
 CMakeFiles/power_meter.elf.dir/Core/Startup/startup_stm32f103c8tx.s.i: cmake_force
@@ -238,7 +252,7 @@ CMakeFiles/power_meter.elf.dir/Core/Startup/startup_stm32f103c8tx.s.s: cmake_for
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
@@ -252,7 +266,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
@@ -266,7 +280,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_co
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
@@ -280,7 +294,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dm
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
@@ -294,7 +308,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_ex
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
@@ -308,7 +322,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_fl
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
@@ -322,7 +336,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_fl
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
@@ -336,7 +350,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gp
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
@@ -347,10 +361,24 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
 
+CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
+CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c
+
+CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c > CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.i
+
+CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.s
+
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -364,7 +392,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pw
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -378,7 +406,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rc
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -392,7 +420,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rc
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -406,7 +434,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_ti
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -420,7 +448,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_ti
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: D:/RoboMaster_git/power_meter/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\power_meter.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c D:\RoboMaster_git\power_meter\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
 
 CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
@@ -434,7 +462,7 @@ CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_ua
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
@@ -448,7 +476,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTO
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\croutine.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i: cmake_force
@@ -462,7 +490,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i: cmake_force
@@ -476,7 +504,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_gro
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/list.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\list.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i: cmake_force
@@ -490,7 +518,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s:
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i: cmake_force
@@ -504,7 +532,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
@@ -518,7 +546,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/queue.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\queue.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i: cmake_force
@@ -532,7 +560,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i: cmake_force
@@ -546,7 +574,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_bu
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\tasks.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i: cmake_force
@@ -560,7 +588,7 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: D:/RoboMaster_git/power_meter/Middlewares/Third_Party/FreeRTOS/Source/timers.c
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj -MF CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj.d -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj -c D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\timers.c
 
 CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i: cmake_force
@@ -571,10 +599,24 @@ CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\power_meter\Middlewares\Third_Party\FreeRTOS\Source\timers.c -o CMakeFiles\power_meter.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.s
 
+CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
+CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj: D:/RoboMaster_git/power_meter/code_mf/Src/GET_POWER_TASK.c
+CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj -MF CMakeFiles\power_meter.elf.dir\code_mf\Src\GET_POWER_TASK.c.obj.d -o CMakeFiles\power_meter.elf.dir\code_mf\Src\GET_POWER_TASK.c.obj -c D:\RoboMaster_git\power_meter\code_mf\Src\GET_POWER_TASK.c
+
+CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\power_meter\code_mf\Src\GET_POWER_TASK.c > CMakeFiles\power_meter.elf.dir\code_mf\Src\GET_POWER_TASK.c.i
+
+CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\power_meter\code_mf\Src\GET_POWER_TASK.c -o CMakeFiles\power_meter.elf.dir\code_mf\Src\GET_POWER_TASK.c.s
+
 CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj: D:/RoboMaster_git/power_meter/code_mf/Src/LED_TASK.c
 CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj -MF CMakeFiles\power_meter.elf.dir\code_mf\Src\LED_TASK.c.obj.d -o CMakeFiles\power_meter.elf.dir\code_mf\Src\LED_TASK.c.obj -c D:\RoboMaster_git\power_meter\code_mf\Src\LED_TASK.c
 
 CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.i: cmake_force
@@ -588,7 +630,7 @@ CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.s: cmake_force
 CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj: D:/RoboMaster_git/power_meter/code_mf/Src/UART_DEBUG_TASK.c
 CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj -MF CMakeFiles\power_meter.elf.dir\code_mf\Src\UART_DEBUG_TASK.c.obj.d -o CMakeFiles\power_meter.elf.dir\code_mf\Src\UART_DEBUG_TASK.c.obj -c D:\RoboMaster_git\power_meter\code_mf\Src\UART_DEBUG_TASK.c
 
 CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.i: cmake_force
@@ -599,10 +641,24 @@ CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.s"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\power_meter\code_mf\Src\UART_DEBUG_TASK.c -o CMakeFiles\power_meter.elf.dir\code_mf\Src\UART_DEBUG_TASK.c.s
 
+CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
+CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj: D:/RoboMaster_git/power_meter/code_mf/Src/bsp_ina226.c
+CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj -MF CMakeFiles\power_meter.elf.dir\code_mf\Src\bsp_ina226.c.obj.d -o CMakeFiles\power_meter.elf.dir\code_mf\Src\bsp_ina226.c.obj -c D:\RoboMaster_git\power_meter\code_mf\Src\bsp_ina226.c
+
+CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\power_meter\code_mf\Src\bsp_ina226.c > CMakeFiles\power_meter.elf.dir\code_mf\Src\bsp_ina226.c.i
+
+CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\power_meter\code_mf\Src\bsp_ina226.c -o CMakeFiles\power_meter.elf.dir\code_mf\Src\bsp_ina226.c.s
+
 CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj: CMakeFiles/power_meter.elf.dir/flags.make
 CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj: D:/RoboMaster_git/power_meter/code_mf/Src/uart_printf.c
 CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj: CMakeFiles/power_meter.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj -MF CMakeFiles\power_meter.elf.dir\code_mf\Src\uart_printf.c.obj.d -o CMakeFiles\power_meter.elf.dir\code_mf\Src\uart_printf.c.obj -c D:\RoboMaster_git\power_meter\code_mf\Src\uart_printf.c
 
 CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.i: cmake_force
@@ -618,6 +674,7 @@ power_meter_elf_OBJECTS = \
 "CMakeFiles/power_meter.elf.dir/Core/Src/dma.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Core/Src/freertos.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Core/Src/gpio.c.obj" \
+"CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj" \
@@ -635,6 +692,7 @@ power_meter_elf_OBJECTS = \
 "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" \
+"CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" \
@@ -651,8 +709,10 @@ power_meter_elf_OBJECTS = \
 "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" \
 "CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
+"CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj" \
 "CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj" \
 "CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj" \
+"CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj" \
 "CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj"
 
 # External object files for target power_meter.elf
@@ -661,6 +721,7 @@ power_meter_elf_EXTERNAL_OBJECTS =
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Core/Src/dma.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Core/Src/freertos.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Core/Src/gpio.c.obj
+power_meter.elf: CMakeFiles/power_meter.elf.dir/Core/Src/i2c.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Core/Src/main.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj
@@ -678,6 +739,7 @@ power_meter.elf: CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
+power_meter.elf: CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
@@ -694,12 +756,14 @@ power_meter.elf: CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+power_meter.elf: CMakeFiles/power_meter.elf.dir/code_mf/Src/GET_POWER_TASK.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/code_mf/Src/LED_TASK.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/code_mf/Src/UART_DEBUG_TASK.c.obj
+power_meter.elf: CMakeFiles/power_meter.elf.dir/code_mf/Src/bsp_ina226.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/code_mf/Src/uart_printf.c.obj
 power_meter.elf: CMakeFiles/power_meter.elf.dir/build.make
 power_meter.elf: CMakeFiles/power_meter.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C executable power_meter.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\RoboMaster_git\power_meter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking C executable power_meter.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\power_meter.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/RoboMaster_git/power_meter/cmake-build-debug/power_meter.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/RoboMaster_git/power_meter/cmake-build-debug/power_meter.bin"
